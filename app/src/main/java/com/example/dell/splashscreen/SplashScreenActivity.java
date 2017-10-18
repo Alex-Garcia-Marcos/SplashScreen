@@ -18,6 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 //Lanzaremos despues de 3000ms(3s), el MainActivity
                 Intent intent=new Intent(SplashScreenActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();//No muestra splashscreen al volver atras. Directamente cerrara aplicacion.
 
             }
         }, 3000);
